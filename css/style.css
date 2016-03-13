@@ -12,16 +12,13 @@ header {
 
 nav {
   float: right;
-  margin-top: 3%;
-  margin-right: 2%;
+  margin-top: 2.5%;
   display: inline;
 }
 
 li {
   display: inline-block;
   font-family: Bryant-Bold;
-  font-size: 24px;
-  padding: 0px 30px 0px 0px;
 }
 
 li a {
@@ -50,6 +47,14 @@ p {
   src: url(Bryant-bold.woff’) format(‘woff’), 
        url(Bryant-bold.ttf’) format(‘truetype’), 
              url(Bryant-bold.svg’) format(‘svg’);
+}
+
+@font-face {
+  font-family: ‘Glyphicons-Halflings-Regular’;
+  src: url(Glyphicons-Halflings-Regular.eot’);
+  src: url(Glyphicons-Halflings-Regular.woff’) format(‘woff’), 
+       url(Glyphicons-Halflings-Regular.ttf’) format(‘truetype’), 
+             url(Glyphicons-Halflings-Regular.svg’) format(‘svg’);
 }
 
 .speech-bubble {
@@ -354,6 +359,7 @@ footer {
   height: 100px;
 }
 
+/*search*/
 .search-box {
   transition: width 0.6s, border-radius 0.6s, background 0.6s, box-shadow 0.6s;
   width: 40px;
@@ -367,14 +373,17 @@ footer {
 .search-box + label .search-icon {
   color: black;
 }
+
 .search-box:hover {
 /*  color: white;
   background: #c8c8c8;*/
   box-shadow: 0 0 0 3px #3d4752;
 }
+
 .search-box:hover + label .search-icon {
   color: white;
 }
+
 .search-box:focus {
   transition: width 0.6s cubic-bezier(0, 1.22, 0.66, 1.39), border-radius 0.6s, background 0.6s;
   border: none;
@@ -387,9 +396,11 @@ footer {
   background: #ebebeb;
   color: black;
 }
+
 .search-box:focus + label .search-icon {
   color: black;
 }
+
 .search-box:not(:focus) {
   text-indent: -5000px;
 }
