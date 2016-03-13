@@ -159,9 +159,25 @@ video {
   margin-right: 50px;
 }
 
+#happy-text {
+  display: none;
+}
+
+.happy:hover #happy-text {
+  display: block;
+}
+
 .silly {
   display: inline-block;
   margin-right: 50px;
+}
+
+#silly-text {
+  display: none;
+}
+
+.silly:hover #silly-text {
+  display: block;
 }
 
 .sad {
@@ -169,14 +185,25 @@ video {
   margin-right: 50px;
 }
 
+#sad-text {
+  display: none;
+}
+
+.sad:hover #sad-text {
+  display: block;
+}
+
 .angry {
   display: inline-block;
   margin-right: 50px;
 }
 
-.daring {
-  display: inline-block;
-  margin-right: 50px;
+#angry-text {
+  display: none;
+}
+
+.angry:hover #angry-text {
+  display: block;
 }
 
 .grey {
@@ -214,19 +241,11 @@ video {
   left: 10px;
 }
 
-#surprise {
-  border: none;
-}
-
-.title:hover .title_menu {
-  display: block;
-}
-
 /*sweet*/
 .featured {
   margin: auto;
-  width: 90%;
-  height: 70%;
+  width: 88%;
+  height: 69%;
   background: url("../images/Apple-Pie-Popcorn1.jpg"); center center no-repeat;
   position: relative;
   box-sizing: border-box;
@@ -254,15 +273,15 @@ video {
 }
 
 .more-recipes {
-  width: 90%;
+  width: 88%;
   margin: 30px auto;
 }
 
 .column {
   background-color: #fff;
-  width: 411px;
+  width: 400px;
   height: 350px;
-  margin-right: 20px;
+  margin-right: 22px;
   display: inline-block;
   float: left;
   box-sizing: border-box;
@@ -270,7 +289,7 @@ video {
 
 .column.last {
   background-color: #fff;
-  width: 411px;
+  width: 400px;
   height: 350px;
   display: inline-block;
   float: left;
@@ -284,10 +303,6 @@ video {
 
 .column-text {
   padding: 2% 4% 0 4%;
-}
-
-.column-title {
-
 }
 
 .column-title a {
