@@ -8,6 +8,7 @@ header {
   overflow: hidden;
   position: relative;
   z-index: 9999;
+  position: fixed;
 }
 
 nav {
@@ -65,7 +66,7 @@ p {
 }
 
 .speech-bubble {
-  margin-top: 100px;
+  margin-top: 250px;
 }
 
 .speech-bubble h1 {
@@ -111,7 +112,7 @@ video {
   min-height: 100%;
   width: auto;
   height: auto;
-  z-index: -1000;
+  z-index: -100;
   overflow: hidden;
 }
 
@@ -119,7 +120,7 @@ video {
   position: relative;
   width: 100px;
   margin: 0 auto;
-  padding-top: 600px;
+  padding-top: 690px;
 }
 
 .omnom-text {
