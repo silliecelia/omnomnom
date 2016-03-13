@@ -9,6 +9,7 @@ header {
   position: relative;
   z-index: 9999;
   position: fixed;
+  width: auto;
 }
 
 nav {
@@ -86,7 +87,6 @@ p {
   font-family: Bryant-Bold;
   font-size: 48px;
   margin: 1.5% 0 0 2%;
-  clear: both;
   float: left;
 }
 
@@ -151,7 +151,7 @@ video {
 .emojis {
   text-align: center;
   margin-top: 50px;
-  margin-bottom: 200px;
+  margin-bottom: 100px;
 }
 
 .happy {
@@ -212,26 +212,6 @@ video {
   position: relative;
   top: 16px;
   left: 10px;
-}
-
-.title_menu {
-  border: 1px solid #F8F8F8;
-  border-radius: 5px;
-  position: absolute;
-  z-index: 2;
-  width: 300px;
-  background-color: #F8F8F8;
-  padding: 0 1% 1% 1%;
-  margin-top: 1%;
-  display: none;
-}
-
-.title_menu li {
-  display: block;
-  border-bottom: 1px solid #C0C0C0;
-  padding: 5% 0 5% 5%;
-  color: #333;
-  font-size: 1.25em;
 }
 
 #surprise {
@@ -424,10 +404,3 @@ footer {
   color: white;
   cursor: pointer;
 }
-
-.arrow {
-    vertical-align: super;
-    padding-left: 9px;
-    display: inline-block;
-}
-
