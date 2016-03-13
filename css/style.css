@@ -11,7 +11,7 @@ header {
 }
 
 nav {
-  float: right;
+  float: left;
   margin-top: 2.5%;
   display: inline;
 }
@@ -19,6 +19,9 @@ nav {
 li {
   display: inline-block;
   font-family: Bryant-Bold;
+  padding: .25% .25% 0 5%;
+  font-size: 20px;
+  color: #333333;
 }
 
 li a {
@@ -375,8 +378,8 @@ footer {
 }
 
 .search-box:hover {
-/*  color: white;
-  background: #c8c8c8;*/
+  color: white;
+  background: #c8c8c8;
   box-shadow: 0 0 0 3px #3d4752;
 }
 
