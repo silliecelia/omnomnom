@@ -15,7 +15,7 @@ header {
 nav {
   float: left;
   margin-top: 10px;
-  display: inline;
+  display: inline-block;
 }
 
 nav ul {
