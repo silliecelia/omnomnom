@@ -191,12 +191,15 @@ video {
   margin-right: 50px;
 }
 
-#happy-text {
-  display: none;
+#happy-text p{
+  opacity: 0;
+  color: #333;
+  font-size: 1.5em;
+  margin-top: 10px;
 }
 
-.happy:hover #happy-text {
-  display: block;
+.happy:hover #happy-text p{
+  opacity: 1;
 }
 
 .silly {
@@ -204,12 +207,15 @@ video {
   margin-right: 50px;
 }
 
-#silly-text {
-  display: none;
+#silly-text p{
+  opacity: 0;
+  color: #333;
+  font-size: 1.5em;
+  margin-top: 10px;
 }
 
-.silly:hover #silly-text {
-  display: block;
+.silly:hover #silly-text p{
+  opacity: 1;
 }
 
 .sad {
@@ -217,12 +223,15 @@ video {
   margin-right: 50px;
 }
 
-#sad-text {
-  display: none;
+#sad-text p{
+  opacity: 0;
+  color: #333;
+  font-size: 1.5em;
+  margin-top: 10px;
 }
 
-.sad:hover #sad-text {
-  display: block;
+.sad:hover #sad-text p{
+  opacity: 1;
 }
 
 .angry {
@@ -230,12 +239,15 @@ video {
   margin-right: 50px;
 }
 
-#angry-text {
-  display: none;
+#angry-text p{
+  opacity: 0;
+  color: #333;
+  font-size: 1.5em;
+  margin-top: 10px;
 }
 
-.angry:hover #angry-text {
-  display: block;
+.angry:hover #angry-text p{
+  opacity: 1;
 }
 
 /*general styes for each recipe page*/
@@ -491,6 +503,7 @@ footer {
   margin-top: 380px;
   margin-left: 340px;
   font-family: Sanchez;
+  line-height: 24px;
 }
 
 /*.divider-bottom {
