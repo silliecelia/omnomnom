@@ -8,12 +8,12 @@ header {
   overflow: hidden;
   position: relative;
   z-index: 9999;
-  position: fixed;
+/*  position: fixed;*/
   width: auto;
 }
 
 nav {
-  float: left;
+  float: right;
   margin-top: 10px;
   display: inline-block;
 }
@@ -32,6 +32,10 @@ li {
 
 li a {
   color: #333;
+}
+
+.hamburger-icon {
+  display: inline-block;
 }
 
 a {
@@ -68,6 +72,7 @@ p {
 
 .speech-bubble {
   margin-top: 250px;
+  line-height: 35px;
 }
 
 .speech-bubble h1 {
@@ -356,12 +361,6 @@ video {
   box-sizing: border-box;
 }
 
-footer {
-  background-color: #ffce00;
-  width: 100%;
-  height: 100px;
-}
-
 /*search*/
 .search-box {
   transition: width 0.6s, border-radius 0.6s, background 0.6s, box-shadow 0.6s;
@@ -418,4 +417,35 @@ footer {
   left: -30px;
   color: white;
   cursor: pointer;
+}
+
+footer {
+  background-color: #ffce00;
+  width: 100%;
+  height: 100px;
+}
+
+/*history*/
+#top-image {
+  background-color: #FFF1B6;
+  z-index: -100;
+  height: 1000px;
+}
+
+.second {
+  background-color: #fff;
+  width: 100%;
+  height: 1000px;
+}
+
+.third {
+  background-color: #FFF1B6;
+  width: 100%;
+  height: 1000px;
+}
+
+.fourth {
+  background-color: #fff;
+  width: 100%;
+  height: 1000px;
 }
