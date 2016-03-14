@@ -4,7 +4,7 @@
   -moz-box-sizing: border-box;
 }
 
-header {
+/*header {
   overflow: hidden;
   position: relative;
   z-index: 9999;
@@ -31,6 +31,17 @@ li {
 
 li a {
   color: #333;
+}*/
+
+.logo {
+  font-family: Bryant-Bold;
+  font-size: 48px;
+  margin: 20px 0 0px 30px;
+  float: left;
+}
+
+.logo a {
+  color: #333333;
 }
 
 .hamburger-icon {
@@ -45,9 +56,10 @@ a {
 p {
   font-family: Bryant-bold;
   font-size: 20px;
-  color: #000;
+  color: #333333;
 }
 
+/*fonts*/
 @font-face {
   font-family: ‘Bryant’;
   src: url(Bryant.eot’);
@@ -60,14 +72,6 @@ p {
   src: url(Bryant-bold.woff’) format(‘woff’), 
        url(Bryant-bold.ttf’) format(‘truetype’), 
              url(Bryant-bold.svg’) format(‘svg’);
-}
-
-@font-face {
-  font-family: ‘Glyphicons-Halflings-Regular’;
-  src: url(Glyphicons-Halflings-Regular.eot’);
-  src: url(Glyphicons-Halflings-Regular.woff’) format(‘woff’), 
-       url(Glyphicons-Halflings-Regular.ttf’) format(‘truetype’), 
-             url(Glyphicons-Halflings-Regular.svg’) format(‘svg’);
 }
 
 .speech-bubble {
@@ -86,17 +90,6 @@ p {
   position: relative;
   clear: both;
   margin: 0 auto;
-}
-
-.logo {
-  font-family: Bryant-Bold;
-  font-size: 48px;
-  margin: 20px 0 0px 30px;
-  float: left;
-}
-
-.logo a {
-  color: #333333;
 }
 
 #top {
@@ -121,6 +114,14 @@ video {
   overflow: hidden;
 }
 
+/*.white-box {
+  width: 100%;
+  background-color: red;
+  height: 100px;
+  z-index: 1000;
+  margin-top: 800px;
+}*/
+
 .chevron {
   position: relative;
   width: 100px;
@@ -136,21 +137,40 @@ video {
   position: absolute;
   top: 0;
   left: 0;
-  z-index:10;
+  z-index: 10;
 }
 
 .omnom-text p {
-  color: #333;
-}
-
-.omnom-text p {
-  font-size: 70px;
+  font-size: 100px;
   font-family: Sanchez;
   font-weight: 400;
   display: table-cell;
   vertical-align: middle;
   line-height: 70px;
-  padding-bottom: 10px;
+  padding-bottom: 40px;
+  color: #333;
+}
+
+.omnom-text-2 {
+  text-align: center;
+  display: table;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.omnom-text-2 p {
+  font-size: 30px;
+  font-family: Sanchez;
+  font-weight: 400;
+  display: table-cell;
+  vertical-align: middle;
+  line-height: 70px;
+  color: #333;
+  padding-top: 90px;
 }
 
 .emojis {
@@ -211,6 +231,7 @@ video {
   display: block;
 }
 
+/*general styes for each recipe page*/
 .grey {
   background-color: #E8E8E8;
   margin-top: 150px;
@@ -361,7 +382,7 @@ video {
   box-sizing: border-box;
 }
 
-/*search*/
+/*search
 .search-box {
   transition: width 0.6s, border-radius 0.6s, background 0.6s, box-shadow 0.6s;
   width: 40px;
@@ -417,7 +438,7 @@ video {
   left: -30px;
   color: white;
   cursor: pointer;
-}
+}*/
 
 footer {
   background-color: #ffce00;
@@ -429,23 +450,220 @@ footer {
 #top-image {
   background-color: #FFF1B6;
   z-index: -100;
-  height: 1000px;
+  height: 700px;
 }
+
+.date p {
+  margin-top: 100px;
+  text-align: center;
+  font-size: 4em;
+  font-family: Sanchez;
+}
+
+.text-1 p {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 1.5em;
+  font-family: Sanchez;
+}
+
+.divider-top {
+  border-top: 1px solid #FFCE00;
+  width: 300px;
+  margin-top: 16px;
+  margin-left: 570px;
+}
+
+.text-2 p {
+  width: 52%;
+  text-align: center;
+  margin-top: 380px;
+  margin-left: 340px;
+  font-family: Sanchez;
+}
+
+/*.divider-bottom {
+  border-bottom: 1px solid #FFCE00;
+  width: 300px;
+  margin-left: 50px;
+  margin-bottom: 500px;
+}*/
 
 .second {
   background-color: #fff;
   width: 100%;
-  height: 1000px;
+  height: 700px;
+}
+
+.second .date p {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 4em;
+  font-family: Sanchez;
+}
+
+.second .text-2 p {
+  width: 52%;
+  text-align: center;
+  margin-top: 410px;
+  margin-left: 340px;
+  font-family: Sanchez;
 }
 
 .third {
   background-color: #FFF1B6;
   width: 100%;
-  height: 1000px;
+  height: 700px;
+}
+
+.third .date p {
+  padding-top: 50px;
+  text-align: center;
+  font-size: 4em;
+  font-family: Sanchez;
+}
+
+.third .text-2 p {
+  width: 52%;
+  text-align: center;
+  margin-top: 410px;
+  margin-left: 340px;
+  font-family: Sanchez;
 }
 
 .fourth {
   background-color: #fff;
   width: 100%;
-  height: 1000px;
+  height: 700px;
 }
+
+.fourth .date p {
+  text-align: center;
+  font-size: 4em;
+  font-family: Sanchez;
+}
+
+.fourth .text-2 p {
+  width: 52%;
+  text-align: center;
+  margin-top: 410px;
+  margin-left: 340px;
+  font-family: Sanchez;
+}
+
+/*menu - Overlay style */
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(153,204,51,0.9);
+}
+
+/* Overlay closing cross */
+.overlay .overlay-close {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  overflow: hidden;
+  border: none;
+  background: url(../img/cross.png) no-repeat center center;
+  text-indent: 200%;
+  color: transparent;
+  outline: none;
+  z-index: 100;
+}
+
+/* Menu style */
+.overlay nav {
+  text-align: center;
+  position: relative;
+  top: 50%;
+  height: 60%;
+  font-size: 54px;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.overlay ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  display: inline-block;
+  height: 100%;
+  position: relative;
+}
+
+.overlay ul li {
+  display: block;
+  height: 20%;
+  height: calc(100% / 5);
+  min-height: 54px;
+}
+
+.overlay ul li a {
+  font-weight: 300;
+  display: block;
+  color: #fff;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+
+.overlay ul li a:hover,
+.overlay ul li a:focus {
+  color: #e3fcb1;
+}
+
+/* Effects */
+.overlay-hugeinc {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0.5s, visibility 0s 0.5s;
+  transition: opacity 0.5s, visibility 0s 0.5s;
+}
+
+.overlay-hugeinc.open {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+
+.overlay-hugeinc nav {
+  -webkit-perspective: 1200px;
+  perspective: 1200px;
+}
+
+.overlay-hugeinc nav ul {
+  opacity: 0.4;
+  -webkit-transform: translateY(-25%) rotateX(35deg);
+  transform: translateY(-25%) rotateX(35deg);
+  -webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
+  transition: transform 0.5s, opacity 0.5s;
+}
+
+.overlay-hugeinc.open nav ul {
+  opacity: 1;
+  -webkit-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+}
+
+.overlay-hugeinc.close nav ul {
+  -webkit-transform: translateY(25%) rotateX(-35deg);
+  transform: translateY(25%) rotateX(-35deg);
+}
+
+@media screen and (max-height: 30.5em) {
+  .overlay nav {
+    height: 70%;
+    font-size: 34px;
+  }
+  .overlay ul li {
+    min-height: 34px;
+  }
+}
+
+
