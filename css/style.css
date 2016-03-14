@@ -74,22 +74,29 @@ p {
              url(Bryant-bold.svg’) format(‘svg’);
 }
 
-.speech-bubble {
+.intro {
   margin-top: 250px;
   line-height: 35px;
 }
 
-.speech-bubble h1 {
+.intro h1 {
   font-family: "Sanchez";
-  font-size: 2em;
+  font-size: 1.8em;
   color: #000;
   text-align: center;
   margin-top: 100px;
   margin-bottom: 100px;
-  width: 900px;
+  width: 45%;
   position: relative;
   clear: both;
   margin: 0 auto;
+}
+
+.intro-2 p{
+  font-size: 3em;
+  font-family: Sanchez;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 #top {
@@ -292,6 +299,8 @@ video {
 
 .recipe-title p {
   padding-top: 20px;
+  font-family: Sanchez;
+  line-height: 20px;
 }
 
 .recipe-title a {
@@ -338,7 +347,9 @@ video {
 
 .column-blurb {
   margin-top: 3%;
-  font-size: 1em;
+  font-size: .9em;
+  font-family: Sanchez;
+  line-height: 18px;
 }
 
 .get-recipe {
@@ -347,7 +358,7 @@ video {
 
 .get-recipe a {
   text-decoration: none;
-  font-family: Bryant-bold;
+  font-family: Sanchez;
   font-size: 1em;
   color: #dd1505;
 }
