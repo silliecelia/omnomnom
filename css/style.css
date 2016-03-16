@@ -17,13 +17,14 @@ body {
 }
 
 nav {
-  float: right;
   background-color: #FFCE00;
-  width: 100%;
+  width: 100% !important;
   position: fixed;
   height: 100%;
   top: 0;
   left: 0;
+  right: 0;
+  bottom: 0;
   z-index: 9999;
   display: none;
 }
@@ -44,10 +45,10 @@ nav li:hover {
 }
 
 #top-item {
-  padding-top: 130px;
+  margin-top: 130px;
 }
 
-nav li #top-item :hover {
+nav li #top-item:hover {
   height: 100px;
 }
 
@@ -78,6 +79,7 @@ li a {
   top: 0;
   right: 0;
   z-index: 999;
+  cursor: pointer;
 }
 
 .cancel-icon {
@@ -87,6 +89,7 @@ li a {
   top: 0;
   right: 0;
   z-index: 999;
+  cursor: pointer;
 }
 
 a {
@@ -522,6 +525,9 @@ footer {
   background-color: #ffce00;
   width: 100%;
   height: 100px;
+}
+
+.happy-footer {
   margin-top: 100px;
 }
 
