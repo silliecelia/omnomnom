@@ -24,6 +24,8 @@ nav {
   height: 100%;
   top: 0;
   left: 0;
+  z-index: 9999;
+  display: none;
 }
 
 li {
@@ -105,7 +107,8 @@ p {
 }
 
 .intro {
-  margin-top: 250px;
+  margin-top: 100px;
+  margin-bottom: 100px;
   line-height: 35px;
 }
 
@@ -282,7 +285,8 @@ video {
 .grey {
   background-color: #E8E8E8;
   margin-top: 150px;
-  height: 800px;
+  top: 0;
+  left: 0;
 }
 
 .structure {
@@ -347,29 +351,43 @@ video {
   color: #dd1505;
 }
 
+.recipe-parent {
+  width: 100%;
+}
+
 .more-recipes {
   width: 88%;
-  margin: 30px auto;
+  padding-top: 28px;
+  margin: 0 auto;
+}
+
+#column {
+  background-color: #fff;
+  width: 400px;
+  height: 350px;
+  margin-right: 33px;
+  display: inline-block;
+  float: left;
+  box-sizing: border-box;
 }
 
 .column {
   background-color: #fff;
   width: 400px;
   height: 350px;
-  margin-right: 22px;
   display: inline-block;
-  float: left;
+  float: right;
   box-sizing: border-box;
 }
 
-.column.last {
+/*.column .last {
   background-color: #fff;
   width: 400px;
   height: 350px;
   display: inline-block;
   float: left;
   box-sizing: border-box;
-}
+}*/
 
 .column-img img{
   width: 100%;
@@ -495,6 +513,7 @@ footer {
   background-color: #ffce00;
   width: 100%;
   height: 100px;
+  margin-top: 100px;
 }
 
 /*history*/
@@ -610,6 +629,33 @@ footer {
   margin-top: 410px;
   margin-left: 340px;
   font-family: Sanchez;
+}
+
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
 }
 
 
