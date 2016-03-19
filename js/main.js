@@ -17,3 +17,7 @@ var $dyk = $('did-you-know-text'),
 /*    $('.text-3').delay(2000).fadeOut('slow');
     $('.text-1').delay(3000).fadeIn('slow', cycle);*/
 })();
+
+$(".submit-btn").click(function(){
+    alert("Yay! We received your recipe. You'll see it online sooooon.");
+});
