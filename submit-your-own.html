@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="utf-8">    
+            <meta name=“description” content=“nomnom” />
+            <meta name=“keywords” content=“nomnom” />
+            <meta name=“author” content=“nomnom” />
+            <link rel="stylesheet" type="text/css" href="css/normalize.css">
+            <link rel="stylesheet" type="text/css" href="css/reset.css">
+            <link rel="stylesheet" type="text/css" href="css/style.css">
+            <title>submit your own nomnom</title>
+            <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+           <script type="text/javascript" src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+            <link href='https://fonts.googleapis.com/css?family=Sanchez:400,400italic' rel='stylesheet' type='text/css'>      
+        </head>
+
+        <body class="body-bg">
+            <div id="top">
+                <header>
+                    <div class="logo">
+                        <a href="index.html">nomnom</a>
+                    </div>
+
+                    <div class="hamburger-icon">
+                        <img src="images/hamburger.png">
+                    </div>
+                </header>
+                    <nav>
+                        <div class="cancel-icon">
+                            <img src="images/cancel.png">
+                        </div>
+                        <ul>
+                            <li id="top-item"><a href="happy.html">sweet recipes</a></li>
+                            <li><a href="silly.html">savory recipes</a></li>
+                            <li><a href="angry.html">spicy recipes</a></li>
+                            <li><a href="sad.html">sweet &amp salty recipes</a></li>
+                            <li><a href="history.html">history of popcorn</a></li>
+                            <li id="last-item"><a href="popping-methods.html">traditional popping methods</a></li>
+                        </ul>
+                    </nav>
+            
+            <div class="title-submit">
+                <h1>submit your own recipe</h1>
+                <div class="small-emoji">
+                    <img src="images/happy-small.png">
+                    <img src="images/silly-small.png">
+                    <img src="images/sad-small.png">
+                    <img src="images/angry-small.png">
+                </div>
+            </div>
+
+            <form action="/personalrecipe/submitrecipe/" enctype="multipart/form-data" id="SubmitRecipeForm" method="post" class="ng-pristine ng-valid">
+                <section class="create-recipe">
+                    <input data-val="true" data-val-number="The field RecipeImageId must be a number." data-val-required="The RecipeImageId field is required." id="RecipeImageId" name="RecipeImageId" type="hidden" value="0">
+                    <ul class="create-recipe__info">
+                        <li>
+                            <span class="field-validation-valid" data-valmsg-for="Title" data-valmsg-replace="true"></span>
+                            <label for="Title">Recipe title</label>
+                            <input class="input-wrap" data-val="true" data-val-required="Oops — don’t forget a title!" id="Title" name="Title" type="text" value>
+                        </li>
+                        <li>
+                            <span class="field-validation-valid" data-valmsg-for="Description" data-valmsg-replace="true"></span>
+                            <label for="Description">Description</label>
+                            <textarea class="input-wrap description" cols="20" data-val="true" data-val-required="Please add a quick description!" id="Description" name="Description" rows="2"></textarea>
+                        </li>
+                        <li>
+                            <span class="field-validation-valid" data-valmsg-for="Ingredients" data-valmsg-replace="true"></span>
+                            <label for="Description">Ingredients</label>
+                            <textarea class="input-wrap" cols="20" data-val="true" data-val-required="Oops — please add the ingredients!" id="Ingredients" name="Ingredients" placeholder="Put each ingredient on its own line." rows="2"></textarea>
+                        </li>
+                        <li>
+                            <span class="field-validation-valid" data-valmsg-for="Description" data-valmsg-replace="true"></span>
+                            <label for="Directions">Directions</label>
+                            <textarea class="input-wrap" cols="20" data-val="true" data-val-required="Oops — please add the ingredients!" id="Ingredients" name="Ingredients" placeholder="Put each ingredient on its own line." rows="2"></textarea>
+                        </li>
+                    </ul>
+                    <section class="create-recipe__left-rail">
+                        <div>
+                            <span class="field-validation-valid" data-valmsg-for="PhotoUploadFile" data-valmsg-replace="true"></span>
+                            <div class="add-photo">
+                                <label class="icon--picture gray">
+                                    <input type="file" name="PhotoUploadFile" id="photoUpload">
+                                </label>
+                            </div>
+                        </div>
+                        <ul class="create-recipe__info stats">
+                            <li>
+                                <span class="field-validation-valid" data-valmsg-for="PrepTime" data-valmsg-replace="true"></span>
+                                <label for="PrepTime">Prep time</label>
+                                <input class="input-wrap" data-val="true" data-val-required="How long does it take to make this recipe?" id="PrepTime" name="PrepTime" type="text" value>
+                            </li>
+                            <li>
+                                <span class="field-validation-valid" data-valmsg-for="CookTime" data-valmsg-replace="true"></span>
+                                <label for="CookTime">Cook Time</label>
+                                <input class="input-wrap" data-val="true" data-val-required="Cooking Time is required. Please enter a time for your recipe." id="CookTime" name="CookTime" type="text" value>
+                            </li>
+                            <li for="ReadyTime">
+                                <span class="italic">(Optional)</span>
+                                <input class="input-wrap" id="ReadyTime" name="ReadyTime" type="text" value>
+                            </li>
+                            <li>
+                                <span class="field-validation-valid" data-valmsg-for="Servings" data-valmsg-replace="true"></span>
+                                <label for="Servings">Number of servings</label>
+                                <input class="input-wrap" data-val="true" data-val-regex="Please enter a whole number between 1 and 300." data-val-regex-pattern="\s*\d*\s*" data-val-required="The servings field is required." id="Servings" name="Servings" type="text" value>
+                            </li>
+                        </ul>
+                    </section>
+                    <ul class="create-recipe__priv-pub-ka">
+                        <li>
+                            <label class="radio-lbl">
+                                <input data-val="true" data-val-required="The RecipeAccessSpecifier field is required." id="RecipeAccessSpecifier" name="RecipeAccessSpecifier" type="radio" value="Private">
+                                <span></span>
+                            </label>
+                            <label class="radio-lbl">
+                                <input checked="checked" id="RecipeAccessSpecifier" name="RecipeAccessSpecifier" type="radio" value="Public">
+                                <span></span>
+                            </label>   
+                        </li>   
+                    </ul>
+                </section>
+            </form>
+
+            <footer>
+                <ul>
+                    <li><a href="http://www.facebook.com" target="_blank">
+                            <div class="fb">
+                                <img src="images/fb.png">
+                            </div></a>
+                    </li>
+
+                    <li><a href="http://www.instagram.com" target="_blank">
+                            <div class="instagram">
+                                <img src="images/instagram.png">
+                            </div></a>
+                    </li>
+
+                    <li><a href="http://www.twitter.com" target="_blank">
+                            <div class="twitter">
+                                <img src="images/twitter.png">
+                            </div></a>
+                    </li>
+
+                    <li><a href="http://www.youtube.com" target="_blank">
+                            <div class="yt">
+                                <img src="images/yt.png">
+                            </div></a>
+                    </li>
+                    <li><a href="http://www.pinterest.com" target="_blank">
+                            <div class="pinterest">
+                                <img src="images/pinterest.png">
+                            </div></a>
+                    </li>
+                </ul>
+            </footer> 
+            <script src="js/main.js"></script>
+        </body>
+    </html>

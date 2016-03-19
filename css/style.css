@@ -16,6 +16,15 @@ body {
   height: 100%;
 }
 
+.body-bg {
+  background-color: #FFF9E2;
+}
+
+
+.container-Cnt {
+  background-color: #FFF9E2;
+}
+
 nav {
   background-color: #FFCE00;
   width: 100% !important;
@@ -29,10 +38,10 @@ nav {
   display: none;
 }
 
-li {
+nav li {
   font-family: Sanchez;
   padding: 10px 30px 0px 0px;
-  font-size: 2.2em;
+  font-size: 2em;
   color: #333333;
   text-align: center;
   line-height: 54px;
@@ -63,8 +72,8 @@ li a {
 
 .logo {
   font-family: Bryant-Bold;
-  font-size: 48px;
-  margin: 20px 0 0px 40px;
+  font-size: 3em;
+  margin: 20px 0 0px 30px;
   float: left;
 }
 
@@ -84,7 +93,7 @@ li a {
 
 .cancel-icon {
   display: inline-block;
-  margin: 23px 32px 0px 0px;
+  margin: 32px 40px 0px 0px;
   position: absolute;
   top: 0;
   right: 0;
@@ -97,7 +106,7 @@ a {
 }
 
 p {
-  font-family: Bryant-bold;
+  font-family: Sanchez;
   font-size: 20px;
   color: #333333;
 }
@@ -118,10 +127,10 @@ p {
 }
 
 .intro {
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin-top: 60px;
+  margin-bottom: 60px;
   line-height: 35px;
-    text-align: center;
+  text-align: center;
 }
 
 .intro h1 {
@@ -191,7 +200,7 @@ video {
 }
 
 .omnom-text p {
-  font-size: 100px;
+  font-size: 6em;
   font-family: Sanchez;
   font-weight: 400;
   display: table-cell;
@@ -201,7 +210,8 @@ video {
   color: #333;
 }
 
-.omnom-text-2 {
+.omnom-text-2 p {
+  font-size: 2em;
   text-align: center;
   display: table;
   width: 100%;
@@ -210,6 +220,7 @@ video {
   top: 0;
   left: 0;
   z-index: 10;
+  margin-top: 300px;
 }
 
 .omnom-text-2 p {
@@ -225,8 +236,7 @@ video {
 
 .emojis {
   text-align: center;
-  margin-top: 50px;
-  margin-bottom: 100px;
+  margin: 20px 0 50px 10px;
 }
 
 .happy {
@@ -293,12 +303,78 @@ video {
   opacity: 1;
 }
 
+#featured {
+  margin: 0 auto;
+  width: 88%;
+  height: 50vh;
+  background: url("../images/Apple-Pie-Popcorn1.jpg"); center center no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
+  margin-bottom: 33px;
+  margin-top: 80px;
+}
+
+.tag {
+  background-color: #ffce00;
+  right: 6%;
+  margin-left: -5rem;
+  padding: .75rem .5rem;
+  position: absolute;
+  text-align: center;
+  text-transform: uppercase;
+  width: 11.25rem;
+}
+
+.tag p {
+  color: #ffffff;
+  text-align: center;
+  font-style: 1.25em; 
+  font-family: Bryant-Bold;
+}
+
+#recipe-title {
+  font-family: Sanchez;
+  font-size: 2em;
+  padding-left: 1em;
+  padding-top: 1.5%;
+  padding-right: 30px;
+  background-color: #fff;
+  color: #dd1505;
+  width: 380px;
+  height: 45%;
+  margin-top: 10px;
+}
+
+#recipe-title p {
+  font-family: Sanchez;
+  line-height: 20px;
+  font-size: .5em;
+  padding-top: 5%;
+}
+
+#recipe-title a {
+  color: #dd1505;
+}
+
+#get-recipe a {
+  text-decoration: none;
+  font-family: Sanchez;
+  font-size: 1em;
+  color: #CC1C0E;
+  margin-left: 2.5%;
+}
+
 /*general styes for each recipe page*/
+#recipe {
+  background-color: white;
+}
+
 .grey {
-  background-color: #E8E8E8;
+  background-color: #ECECEC;
   margin-top: 150px;
   top: 0;
   left: 0;
+  height: 1500px;
 }
 
 .structure {
@@ -315,6 +391,20 @@ video {
 }
 
 .title h1 {
+  font-size: 3.43em;
+  margin-top: 5%;
+  margin-bottom: 1%;
+  color: #333;
+  font-family: "Sanchez";
+  display: inline-block;
+}
+
+.title-sad {
+  width: 30%;
+  margin-left: 20%;
+}
+
+.title-sad h1 {
   font-size: 3.43em;
   margin-top: 5%;
   margin-bottom: 1%;
@@ -357,6 +447,7 @@ video {
   padding-top: 20px;
   font-family: Sanchez;
   line-height: 20px;
+  font-size: .4em;
 }
 
 .recipe-title a {
@@ -365,41 +456,38 @@ video {
 
 .recipe-parent {
   width: 100%;
+  clear: both;
 }
 
 .more-recipes {
   width: 88%;
-  padding-top: 28px;
+  padding-top: 33px;
   margin: 0 auto;
 }
 
-#column {
-  background-color: #fff;
-  width: 400px;
-  height: 350px;
-  margin-right: 33px;
-  display: inline-block;
-  float: left;
-  box-sizing: border-box;
+#more-recipes {
+  width: 88%;
+  margin: 0 auto;
+  overflow: hidden;
+  margin-bottom: 80px;
 }
 
 .column {
   background-color: #fff;
   width: 400px;
   height: 350px;
-  display: inline-block;
-  float: right;
+  float: left;
   box-sizing: border-box;
+  margin-right: 33px;
 }
 
-/*.column .last {
+#column {
   background-color: #fff;
   width: 400px;
   height: 350px;
-  display: inline-block;
-  float: left;
+  float: right;
   box-sizing: border-box;
-}*/
+}
 
 .column-img img{
   width: 100%;
@@ -434,10 +522,10 @@ video {
 }
 
 /*savory*/
-#featured-savory {
+.featured-savory {
   margin: auto;
-  width: 90%;
-  height: 70%;
+  width: 88%;
+  height: 69%;
   background: url("../images/lemony-kale.jpg"); center center no-repeat;
   position: relative;
   box-sizing: border-box;
@@ -463,72 +551,62 @@ video {
   box-sizing: border-box;
 }
 
-/*search
-.search-box {
-  transition: width 0.6s, border-radius 0.6s, background 0.6s, box-shadow 0.6s;
-  width: 40px;
-  height: 30px;
-  border-radius: 3px;
-  border: none;
-  cursor: pointer;
-  background: #ebebeb;
+.more-recipes .row-2 {
+  margin-top: 383px;
+  overflow: hidden;
 }
 
-.search-box + label .search-icon {
-  color: black;
+.did-you-know {
+  background-color: #FFF9E2;
+  width: 400px;
+  height: 350px;
+  display: inline-block;
+  float: right;
+  box-sizing: border-box;
 }
 
-.search-box:hover {
-  color: white;
-  background: #c8c8c8;
-  box-shadow: 0 0 0 3px #3d4752;
+.did-you-know-text {
+  width: 90%;
+  padding-left: 7%;
+  padding-top: 25%;
+  text-align: center;
 }
 
-.search-box:hover + label .search-icon {
-  color: white;
+.did-you-know h1 {
+  font-size: 2em;
+  font-family: Sanchez;
+  color: #333;
+  padding-top: 2%;
+  padding-bottom: 4%;
 }
 
-.search-box:focus {
-  transition: width 0.6s cubic-bezier(0, 1.22, 0.66, 1.39), border-radius 0.6s, background 0.6s;
-  border: none;
-  outline: none;
-  box-shadow: none;
-  padding-left: 15px;
-  cursor: text;
-  width: 300px;
-  border-radius: auto;
-  background: #ebebeb;
-  color: black;
+.did-you-know p {
+  font-size: 1em;
+  font-family: Sanchez;
+  color: #333;
+  line-height: 18px;
 }
-
-.search-box:focus + label .search-icon {
-  color: black;
-}
-
-.search-box:not(:focus) {
-  text-indent: -5000px;
-}
-
-#search-submit {
-  position: relative;
-  left: -5000px;
-}
-
-.search-icon {
-  position: absolute;
-  left: -30px;
-  color: white;
-  cursor: pointer;
-}*/
 
 footer {
   background-color: #ffce00;
   width: 100%;
-  height: 100px;
+  height: 200px;
+}
+
+footer li .fb{
+  display: inline-block;
+  margin-top: 20px;
+  margin-left: 76px;
+}
+
+footer li {
+  display: inline-block;
+  text-align: center;
+  margin-left: 10px;
 }
 
 .happy-footer {
-  margin-top: 100px;
+  margin-top: 40px;
 }
 
 /*history*/
@@ -539,7 +617,7 @@ footer {
 }
 
 .date p {
-  margin-top: 100px;
+  margin-top: 40px;
   text-align: center;
   font-size: 4em;
   font-family: Sanchez;
@@ -571,13 +649,6 @@ footer {
   font-family: Sanchez;
   line-height: 24px;
 }
-
-/*.divider-bottom {
-  border-bottom: 1px solid #FFCE00;
-  width: 300px;
-  margin-left: 50px;
-  margin-bottom: 500px;
-}*/
 
 .second {
   background-color: #fff;
@@ -673,4 +744,588 @@ footer {
     *zoom: 1;
 }
 
+.submit {
+  font-family: Sanchez;
+  background-color: #CC1C0E;
+  border: none;
+  width: 400px;
+  height: 100px;
+  margin-top: 33px;
+  font-size: 1.5em;
+  color: white;
+  border-radius: 5px;
+  margin-left: 433px;
+}
 
+.submit:hover {
+  background-color: #B71B0E;
+}
+
+/*submit your own recipe*/
+.title-submit {
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+.title-submit h1 {
+  font-size: 3.43em;
+  margin-top: 5%;
+  color: #333;
+  font-family: "Sanchez";
+  display: inline-block;
+}
+
+form {
+  width: 100%;
+  height: 50%;
+}
+
+.create-recipe {
+  float: left;
+  width: 90%;
+  margin: 1.5em 5%;
+  display: block;
+  box-sizing: border-box;
+}
+
+input {
+  color: red;
+  border: 0;
+  -webkit-appearance: none;
+  line-height: normal;
+  font-family: Sanchez;
+}
+
+.create-recipe__info {
+  width: 59.26%;
+  float: right;
+}
+
+.create-recipe__info li {
+  width: 100%;
+  margin: .5rem auto;
+  float: left;
+}
+
+.create-recipe__info li label {
+  float: left;
+  margin-bottom: .25rem;
+  margin-right: .25rem;
+  color: #333;
+  font-family: Sanchez;
+}
+
+.create-recipe__info li input[type="text"], .create-recipe__info li textarea {
+  float: left;
+  clear: both;
+  width: 100%;
+  height: 2.5rem;
+  line-height: 1.5rem;
+  padding: .25rem .5rem;
+  border-radius: 0;
+  color: #4d4d4d!important;
+  font-size: 1rem;
+}
+
+.create-recipe__left-rail {
+  width: 34%;
+  position: relative;
+  float: left;
+}
+
+.create-recipe__left-rail>div {
+  float: left;
+  width: 100%;
+}
+
+.create-recipe .add-photo {
+  width: 276px;
+  height: 185px;
+  margin-left: 0;
+}
+
+.create-recipe .icon--picture.gray {
+  width: 276px;
+  height: 185px;
+  background-position: center 35px;
+  background-size: 36%;
+  position: relative;
+  left: 0;
+  top: 0;
+  display: block;
+  transform: scale(1);
+  opacity: .7;
+}
+
+.icon--picture.gray {
+  background-image: url(http://images.media-allrecipes.com/ar-images/icons/pic-icon-gray.svg);
+}
+
+.create-recipe__info.stats {
+  width: 100%;
+}
+
+.create-recipe__info.stats li {
+  width: 110px;
+  white-space: nowrap;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.create-recipe__info.stats li {
+  margin-left: 60px;
+}
+
+.create-recipe__info.stats li label {
+  white-space: nowrap;
+}
+
+.create-recipe__info li input[type="text"], .create-recipe__info li textarea {
+  float: left;
+  clear: both;
+  width: 100%;
+  height: 2.5rem;
+  line-height: 1.5rem;
+  padding: .25rem .5rem;
+  border-radius: 0;
+  color: #4d4d4d!important;
+  font-size: 1rem;
+}
+
+.create-recipe__info.stats li .italic, .create-recipe__info.stats li .grid-col__video__text {
+  font-family: Sanchez;
+  font-style: italic;
+}
+
+/* RESPONSIVE: Tablet*/
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+.logo {
+  margin-left: 15px;
+  }
+
+.hamburger-icon {
+  margin-right: 20px;
+}
+}
+
+/* RESPONSIVE: Phone*/
+@media only screen and (max-width: 767px) {
+/*global*/
+.logo {
+  font-family: Bryant-Bold;
+  font-size: 2em;
+  margin: 16px 0 0px 20px;
+  float: left;
+}
+
+.hamburger-icon {
+  display: inline-block;
+  margin: 20px 25px 0px 0px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 999;
+  cursor: pointer;
+}
+
+.cancel-icon {
+  display: inline-block;
+  margin: 23px 32px 0px 0px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 999;
+  cursor: pointer;
+}
+
+nav li {
+  font-family: Sanchez;
+  padding: 0px 30px 0px 0px;
+  font-size: 2em;
+  color: #333333;
+  text-align: center;
+  line-height: 54px;
+  border-bottom: 1px solid #FFE472;
+  padding-bottom: 18px;
+  padding-left: 20px;
+}
+
+/*phone homepage*/
+.omnom-text {
+  text-align: center;
+  display: table;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.omnom-text p {
+  font-size: 3em;
+  font-family: Sanchez;
+  font-weight: 400;
+  display: table-cell;
+  vertical-align: middle;
+  line-height: 70px;
+  padding-bottom: 40px;
+  color: #333;
+}
+
+.omnom-text-2 p{
+  font-size: 1.5em;
+  text-align: center;
+  display: table;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 20;
+  left: 0;
+  z-index: 10;
+  line-height: 22px;
+}
+
+.intro h1 {
+  font-family: "Sanchez";
+  font-size: 1.3em;
+  color: #000;
+  display: inline-block;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  width: 90%;
+  position: relative;
+  clear: both;
+  margin: 0 auto;
+  line-height: 28px;
+}
+
+.intro-2 p{
+  font-size: 2em;
+  font-family: Sanchez;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.emojis {
+  text-align: center;
+  padding-left: 30px;
+}
+
+#happy-text p{
+  opacity: 0;
+  color: #333;
+  font-size: 1.5em;
+  margin-top: 10px;
+  margin-bottom: 14px;
+}
+
+#silly-text p{
+  opacity: 0;
+  color: #333;
+  font-size: 1.5em;
+  margin-top: 10px;
+  margin-bottom: 14px;
+}
+
+#sad-text p{
+  opacity: 0;
+  color: #333;
+  font-size: 1.5em;
+  margin-top: 10px;
+  margin-bottom: 14px;
+}
+
+/*phone happy*/
+#recipe {
+  background-color: white;
+}
+
+#featured {
+  margin: 0 auto;
+  width: 88%;
+  height: 50vh;
+  background: url("../images/Apple-Pie-Popcorn1.jpg"); center center no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
+  margin-bottom: 33px;
+  margin-top: 80px;
+}
+/*
+.tag {
+  background-color: #CC1C0E;
+  left: 50%;
+  margin-left: -5rem;
+  padding: .75rem .5rem;
+  position: absolute;
+  text-align: center;
+  text-transform: uppercase;
+  top: 82rem;
+  width: 11.25rem;
+  z-index: 2;
+}
+
+.tag p {
+  color: #ffffff;
+  text-align: center;
+  font-style: 1.25em; 
+  font-family: Bryant-Bold;
+}*/
+
+#recipe-title {
+  font-family: Sanchez;
+  font-size: 2em;
+  padding-left: 1em;
+  padding-top: 1.5%;
+  background-color: #fff;
+  color: #dd1505;
+  width: 100%;
+  height: 40%;
+  margin-top: 10px;
+}
+
+#recipe-title p {
+  padding-top: 10px;
+  font-family: Sanchez;
+  line-height: 20px;
+  font-size: .5em;
+}
+
+#recipe-title a {
+  color: #dd1505;
+}
+
+#get-recipe a {
+  text-decoration: none;
+  font-family: Sanchez;
+  font-size: .5em;
+  color: #CC1C0E;
+}
+
+.grey {
+  background-color: #ECECEC;
+  margin-top: 150px;
+  top: 0;
+  left: 0;
+  height: 2500px;
+}
+
+.structure {
+  top: -120px;
+  position: relative;
+  height: 700px;
+  box-sizing: border-box;
+}
+
+.title {
+  width: 18%;
+  margin: 0 auto;
+}
+
+.title h1 {
+  font-size: 3.43em;
+  margin-top: 5%;
+  color: #333;
+  font-family: "Sanchez";
+  display: inline-block;
+}
+
+.small-emoji {
+  display: inline-block;
+  position: relative;
+  top: 16px;
+  left: 10px;
+}
+
+.featured {
+  margin: auto;
+  width: 94%;
+  height: 350px;
+  background: url("../images/Apple-Pie-Popcorn1.jpg"); center center no-repeat;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.recipe-title {
+  font-family: Sanchez;
+  font-size: 1.25em;
+  padding-left: 30px;
+  padding-top: 20px;
+  padding-right: 30px;
+  background-color: #F8F8F8;
+  color: #dd1505;
+  width: 380px;
+  height: 33%;
+  margin-top: 10px;
+}
+
+.recipe-title p {
+  padding-top: 12px;
+  font-family: Sanchez;
+  line-height: 16px;
+  font-size: .7em;
+}
+
+.recipe-title a {
+  color: #dd1505;
+}
+
+.recipe-parent {
+  width: 100%;
+  clear: both;
+}
+
+.more-recipes {
+  width: 94%;
+  padding-top: 33px;
+  margin: 0 auto;
+}
+
+.column {
+  background-color: #fff;
+  width: 100%;
+  height: 350px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+#column {
+  background-color: #fff;
+  width: 100%;
+  height: 350px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+.column-img img{
+  width: 100%;
+  height: 200px;
+}
+
+.column-text {
+  padding: 2% 4% 0 4%;
+}
+
+.column-title a {
+  color: #dd1505;
+  font-family: "Sanchez";
+}
+
+.column-blurb {
+  margin-top: 3%;
+  font-size: .9em;
+  font-family: Sanchez;
+  line-height: 18px;
+}
+
+.get-recipe {
+  padding-top: 6%;
+}
+
+.get-recipe a {
+  text-decoration: none;
+  font-family: Sanchez;
+  font-size: 1em;
+  color: #dd1505;
+}
+
+.more-recipes .row-2 {
+  clear: both;
+  margin-bottom: 33px;
+}
+
+.did-you-know {
+  background-color: #FFF9E2;
+  width: 400px;
+  height: 350px;
+  display: inline-block;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.did-you-know-text {
+  width: 90%;
+  padding-left: 12%;
+  padding-top: 28%;
+  text-align: center;
+}
+
+.did-you-know h1 {
+  font-size: 2em;
+  font-family: Sanchez;
+  color: #333;
+  padding-top: 2%;
+  padding-bottom: 4%;
+}
+
+.did-you-know p {
+  font-size: 1em;
+  font-family: Sanchez;
+  color: #333;
+  line-height: 18px;
+}
+
+.submit {
+  font-family: Sanchez;
+  background-color: #CC1C0E;
+  border: none;
+  width: 94%;
+  height: 100px;
+  margin-top: 33px;
+  font-size: 1em;
+  color: white;
+  border-radius: 5px;
+  position: relative;
+}
+
+.submit:hover {
+  background-color: #B71B0E;
+}
+
+/*phone history*/
+#top-image {
+  z-index: -100;
+  height: 100%;
+}
+
+.date p {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 2.7em;
+  font-family: Sanchez;
+}
+
+.text-1 p {
+  margin-top: 10px;
+  position: relative;
+  text-align: center;
+  font-size: 1.4em;
+  font-family: Sanchez;
+}
+
+.title {
+  width: 18%;
+  height: 100px;
+  margin: 0 auto;
+}
+
+.title h1 {
+  font-size: 2.5em;
+  margin-top: 5%;
+  margin-bottom: 1%;
+  color: #333;
+  font-family: "Sanchez";
+  display: inline-block;
+  text-align: center;
+}
+
+footer {
+  background-color: #ffce00;
+  width: 100%;
+  height: 150px;
+}
+
+footer li .fb{
+  margin-left: 70px;
+}
+}
