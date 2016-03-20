@@ -864,6 +864,7 @@ input {
   transform: scale(1);
   opacity: .7;
   cursor: pointer;
+    background-repeat: no-repeat;
 }
 
 .icon--picture.gray {
@@ -922,6 +923,10 @@ input {
 
 .submit-btn:hover {
   background-color: #B71B0E;
+}
+
+#photoUpload {
+  display: none;
 }
 
 
