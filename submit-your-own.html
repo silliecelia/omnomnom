@@ -66,12 +66,12 @@
                         <li>
                             <span class="field-validation-valid" data-valmsg-for="Ingredients" data-valmsg-replace="true"></span>
                             <label for="Description">Ingredients</label>
-                            <textarea class="input-wrap" cols="20" data-val="true" data-val-required="Oops — please add the ingredients!" id="Ingredients" name="Ingredients" placeholder="Put each ingredient on its own line." rows="2"></textarea>
+                            <textarea class="input-wrap" cols="20" data-val="true" data-val-required="Oops — please add the ingredients!" id="Ingredients" name="Ingredients" placeholder="Separate each ingredient with a comma" rows="2"></textarea>
                         </li>
                         <li>
                             <span class="field-validation-valid" data-valmsg-for="Description" data-valmsg-replace="true"></span>
                             <label for="Directions">Directions</label>
-                            <textarea class="input-wrap" cols="20" data-val="true" data-val-required="Oops — please add the ingredients!" id="Ingredients" name="Ingredients" placeholder="Put each ingredient on its own line." rows="2"></textarea>
+                            <textarea class="input-wrap" cols="20" data-val="true" data-val-required="Oops — please add the ingredients!" id="Ingredients" name="Ingredients" placeholder="Separate each ingredient with a comma" rows="2"></textarea>
                         </li>
                     </ul>
                     <section class="create-recipe__left-rail">
@@ -79,7 +79,7 @@
                             <span class="field-validation-valid" data-valmsg-for="PhotoUploadFile" data-valmsg-replace="true"></span>
                             <div class="add-photo">
                                 <label class="icon--picture gray">
-                                    <input type="file" name="PhotoUploadFile" id="photoUpload">
+                                    <input type="file" name="PhotoUploadFile" id="photoUpload"::after>
                                 </label>
                             </div>
                         </div>
@@ -90,20 +90,12 @@
                                 <input class="input-wrap" data-val="true" data-val-required="How long does it take to make this recipe?" id="PrepTime" name="PrepTime" type="text" value>
                             </li>
                             <li>
-                                <span class="field-validation-valid" data-valmsg-for="CookTime" data-valmsg-replace="true"></span>
-                                <label for="CookTime">Cook Time</label>
-                                <input class="input-wrap" data-val="true" data-val-required="Cooking Time is required. Please enter a time for your recipe." id="CookTime" name="CookTime" type="text" value>
-                            </li>
-                            <li>
                                 <span class="field-validation-valid" data-valmsg-for="Servings" data-valmsg-replace="true"></span>
                                 <label for="Servings">Number of servings</label>
                                 <input class="input-wrap" data-val="true" data-val-regex="Please enter a whole number between 1 and 300." data-val-regex-pattern="\s*\d*\s*" data-val-required="The servings field is required." id="Servings" name="Servings" type="text" value>
                             </li>
                         </ul>
                     </section>
-
-
-                        
 
 <!--                     <ul class="create-recipe__priv-pub-ka">
                         <li>
@@ -115,6 +107,12 @@
                                 <input checked="checked" id="RecipeAccessSpecifier" name="RecipeAccessSpecifier" type="radio" value="Public">
                                 <span></span>
                             </label>   
+                        </li>
+                        <li>
+                            <div>
+                                <input type="submit" name="SubmitRecipe" class="btns-two-small btn-gold" value="Save">
+                                <a href="/cook/my" class="btns-two-small" target="_self">Cancel</a>
+                            </div>
                         </li>   
                     </ul> -->
                 </section>
