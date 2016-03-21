@@ -20,7 +20,6 @@ body {
   background-color: #FFF9E2;
 }
 
-
 .container-Cnt {
   background-color: #FFF9E2;
 }
@@ -42,6 +41,10 @@ body {
   font-size: 1.1em;
   text-align: center;
   padding-top: .4em;
+}
+
+.featured-emoji-tag {
+  float: right;
 }
 
 nav {
@@ -650,7 +653,7 @@ footer li {
   font-family: Sanchez;
 }
 
-.text-1 p {
+.first-text p {
   margin-top: 10px;
   text-align: center;
   font-size: 1.5em;
@@ -669,7 +672,7 @@ footer li {
   margin-top: 30px;
 }
 
-.text-2 p {
+.second-text p {
   width: 52%;
   text-align: center;
   margin: 40px 0 100px 340px;
@@ -690,7 +693,7 @@ footer li {
   font-family: Sanchez;
 }
 
-.second .text-2 p {
+.second .second-text p {
   width: 52%;
   text-align: center;
   margin-top: 100px;
@@ -716,7 +719,7 @@ footer li {
   font-family: Sanchez;
 }
 
-.third .text-2 p {
+.third .second-text p {
   width: 52%;
   text-align: center;
   margin-top: 410px;
@@ -736,7 +739,7 @@ footer li {
   font-family: Sanchez;
 }
 
-.fourth .text-2 p {
+.fourth .second-text p {
   width: 52%;
   text-align: center;
   margin-top: 410px;
@@ -803,7 +806,7 @@ footer li {
 }
 
 .create-recipe__info.stats {
-  margin-top: 1.5em;
+  margin-top: 2.7em;
   width: 100%;
 }
 
@@ -879,11 +882,11 @@ input {
 .create-recipe .icon--picture.gray {
   width: 430px;
   height: 185px;
-  background-position: center 40px;
+  background-position: center 48px;
   background-size: 21%;
   position: relative;
   left: 0;
-  top: 0;
+  top: 28px;
   display: block;
   transform: scale(1);
   opacity: .7;
@@ -897,9 +900,9 @@ input {
 }
 
 .create-recipe .icon--picture.gray:after {
-  content: "Take a photo";
+  content: "Add a photo";
   display: block;
-  margin-top: 9.5em;
+  margin-top: 10em;
   text-align: center;
   font-size: .8rem;
   font-family: Sanchez;
@@ -927,6 +930,7 @@ input {
   color: #4d4d4d!important;
   font-size: 1rem;
   padding-top: .5rem;
+  border: black;
 }
 
 .create-recipe__info.stats li .italic, .create-recipe__info.stats li .grid-col__video__text {
@@ -1354,7 +1358,7 @@ nav li {
   font-family: Sanchez;
 }
 
-.text-1 p {
+.first-text p {
   margin-top: 10px;
   position: relative;
   text-align: center;
