@@ -1105,7 +1105,7 @@ nav li {
   margin-bottom: 14px;
 }
 
-/*phone happy*/
+/*phone happy sweet*/
 #recipe {
   background-color: white;
 }
@@ -1120,26 +1120,6 @@ nav li {
   margin-bottom: 33px;
   margin-top: 80px;
 }
-/*
-.tag {
-  background-color: #CC1C0E;
-  left: 50%;
-  margin-left: -5rem;
-  padding: .75rem .5rem;
-  position: absolute;
-  text-align: center;
-  text-transform: uppercase;
-  top: 82rem;
-  width: 11.25rem;
-  z-index: 2;
-}
-
-.tag p {
-  color: #ffffff;
-  text-align: center;
-  font-style: 1.25em; 
-  font-family: Bryant-Bold;
-}*/
 
 #recipe-title {
   font-family: Sanchez;
@@ -1314,7 +1294,7 @@ nav li {
 
 .did-you-know-text {
   width: 90%;
-  padding-left: 12%;
+  padding-left: 14%;
   padding-top: 28%;
   text-align: center;
 }
@@ -1323,7 +1303,6 @@ nav li {
   font-size: 2em;
   font-family: Sanchez;
   color: #333;
-  padding-top: 2%;
   padding-bottom: 4%;
 }
 
@@ -1339,16 +1318,133 @@ nav li {
   background-color: #CC1C0E;
   border: none;
   width: 94%;
-  height: 100px;
-  margin-top: 33px;
+  height: 10%;
+  margin-top: 3%;
   font-size: 1em;
   color: white;
   border-radius: 5px;
   position: relative;
+  z-index: 9999;
 }
 
 .submit:hover {
   background-color: #B71B0E;
+}
+
+/*phone silly savory*/
+#recipe {
+  background-color: white;
+}
+
+.featured-savory{
+  margin: auto;
+  width: 94%;
+  height: 350px;
+  background: url("../images/lemony-kale.jpg"); center center no-repeat;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.featured-savory .recipe-title {
+  font-family: Sanchez;
+  font-size: 2em;
+  padding-left: 1em;
+  padding-top: 6%;
+  background-color: #F8F8F8;
+  color: #dd1505;
+  width: 100%;
+  height: 40%;
+  margin-top: 10px;
+}
+
+.featured-savory .recipe-title p {
+  padding-top: 4%;
+  font-family: Sanchez;
+  line-height: 20px;
+  font-size: .5em;
+}
+
+.featured-savory .recipe-title a {
+  color: #dd1505;
+}
+
+.did-you-know-text {
+  width: 90%;
+  padding-left: 14%;
+  padding-top: 26%;
+  text-align: center;
+}
+
+/*phone angry spicy*/
+.featured-spicy{
+  margin: auto;
+  width: 94%;
+  height: 350px;
+  background: url("../images/spicy-curry.jpg"); center center no-repeat;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.featured-spicy .recipe-title {
+  font-family: Sanchez;
+  font-size: 2em;
+  padding-left: 1em;
+  padding-top: 6%;
+  background-color: #F8F8F8;
+  color: #dd1505;
+  width: 100%;
+  height: 50%;
+  margin-top: 10px;
+}
+
+.featured-spicy .recipe-title p {
+  padding-top: 4%;
+  font-family: Sanchez;
+  line-height: 20px;
+  font-size: .5em;
+}
+
+/*phone sad sweet & salty*/
+.featured-sweet-salty{
+  margin: auto;
+  width: 94%;
+  height: 350px;
+  background: url("../images/sea-salt-chocolate.jpg"); center center no-repeat;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.featured-sweet-salty .recipe-title {
+  font-family: Sanchez;
+  font-size: 2em;
+  padding-left: 1em;
+  padding-top: 6%;
+  background-color: #F8F8F8;
+  color: #dd1505;
+  width: 100%;
+  height: 60%;
+  margin-top: 10px;
+}
+
+.featured-sweet-salty .recipe-title p {
+  padding-top: 4%;
+  font-family: Sanchez;
+  line-height: 20px;
+  font-size: .5em;
+}
+
+.title-sad {
+  width: 30%;
+  margin-left: 30%;
+  margin-right: 20%;
+}
+
+.title-sad h1 {
+  font-size: 2em;
+  width: 300px;
+  margin-top: 20%;
+  margin-bottom: 1%;
+  color: #333;
 }
 
 /*phone history*/
@@ -1388,6 +1484,82 @@ nav li {
   text-align: center;
 }
 
+.second-text p {
+  width: 80%;
+  margin: 10% 25% 2% 0%;
+  font-family: Sanchez;
+  line-height: 1em;
+  font-size: 1.1em;
+  padding-left: 12%;
+}
+
+.second {
+  background-color: #FFF;
+  width: 100%;
+  height: 661px;
+}
+
+.second .date p {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 2em;
+  font-family: Sanchez;
+}
+
+.second .second-text p {
+  width: 80%;
+  margin: 10% 25% 2% 0%;
+  font-family: Sanchez;
+  line-height: 1em;
+  font-size: 1.1em;
+  padding-left: 12%;
+}
+
+.third {
+  background-color: #FFF1B6;
+  width: 100%;
+  height: 762px;
+}
+
+.third .date p {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 2em;
+  font-family: Sanchez;
+}
+
+.third .second-text p {
+  width: 80%;
+  margin: 10% 25% 2% 0%;
+  font-family: Sanchez;
+  line-height: 1em;
+  font-size: 1.1em;
+  padding-left: 12%;
+}
+
+.fourth {
+  background-color: #fff;
+  width: 100%;
+  height: 670px;
+}
+
+.fourth .date p {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 2em;
+  font-family: Sanchez;
+}
+
+.fourth .second-text p {
+  width: 80%;
+  margin: 10% 25% 2% 0%;
+  font-family: Sanchez;
+  line-height: 1em;
+  font-size: 1.1em;
+  padding-left: 12%;
+}
+
+/*footer*/
 footer {
   background-color: #ffce00;
   width: 100%;
