@@ -554,7 +554,7 @@ video {
 }
 
 .featured-savory .recipe-title {
-  height: 300px;
+  height: 200px;
 }
 
 /*sweet & salty*/
@@ -575,10 +575,6 @@ video {
   background: url("../images/spicy-curry.jpg"); center center no-repeat;
   position: relative;
   box-sizing: border-box;
-}
-
-.featured-savory .recipe-title {
-  height: 300px;
 }
 
 .more-recipes .row-2 {
