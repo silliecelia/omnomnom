@@ -770,7 +770,7 @@ footer li {
     *zoom: 1;
 }
 
-.submit {
+/*.submit {
   font-family: Sanchez;
   background-color: #CC1C0E;
   border: none;
@@ -785,7 +785,7 @@ footer li {
 
 .submit:hover {
   background-color: #B71B0E;
-}
+}*/
 
 /*submit your own recipe*/
 .divider-submit {
@@ -814,7 +814,7 @@ footer li {
 
 form {
   width: 100%;
-  height: 55%;
+  height: 57%;
 }
 
 .create-recipe {
